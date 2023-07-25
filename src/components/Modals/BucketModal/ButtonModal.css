@@ -1,0 +1,132 @@
+.overlay {
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.46);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+   
+  }
+
+
+.bucket-modal {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    overflow-y: auto;
+    height: 250px;
+    width: 400px;
+    padding: 2rem 2rem;
+    background-color: #fff;
+    border-radius: 3px;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.12);
+    
+}
+
+.bucket-name input{
+    
+    padding-left: 10px;
+    height: 40px;
+    width: 220px;
+
+}
+
+.bucket-modal-button {
+
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+}
+
+.add-button {
+
+    background-color: rgba(113, 113, 192);
+    color: white;
+    padding: 0.7rem 0.7rem;
+    width: 80px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+
+}
+
+
+.cancel-button {
+
+    padding: 0.7rem 0.7rem;
+    width: 80px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+@media screen and (min-height: 1180px) {
+    
+    .bucket-modal {
+       
+        margin-bottom: 300px;
+    }
+   
+}
+
+@media screen and (min-height: 1300px) {
+    
+    .bucket-modal {
+       
+        margin-bottom: 400px;
+    }
+   
+}
+/*
+
+
+@media screen and (max-width: 930px) {
+    
+    .bucket-modal {
+       
+        margin-bottom: 706px;
+    }
+   
+}
+
+@media screen and (max-width: 600px) {
+    
+    .bucket-modal {
+       
+        margin-bottom: 200px;
+    }
+   
+}
+*/
+
+@media screen and (max-width: 472px) {
+    
+    .bucket-modal {
+        width: 290px;
+    }
+   
+}
+
+@media screen and (max-width: 320px) {
+    
+    .bucket-modal {
+        width: 270px;
+    }
+
+    .bucket-name input{
+    
+       
+        width: 200px;
+    
+    }
+   
+}
