@@ -50,6 +50,7 @@ export const BoardProvider = ({children}) => {
 
         const newState = [...boards];
         const board = newState.find((b, i) => i === index);
+        
         board.name = boardName;
     
         setBoards(newState)

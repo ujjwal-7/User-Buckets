@@ -30,15 +30,7 @@ const Sidebar = () => {
         </div>
       </div>
       <ButtonModal isOpen = {openModal} setIsOpen = {setOpenModal} type={"add"}/>
-    </>
-    
-      
-
-    
-
-    
-      
-    
+    </> 
   )
 }
 

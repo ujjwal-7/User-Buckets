@@ -42,8 +42,8 @@ const TaskCard = ({task, id, col, taskIndex}) => {
           <p>{task}</p>
         </div>
         
-        <div className = 'task-actions' onClick={() => setOpenModal(true)}><i class="material-icons">edit</i></div>
-        <div className = 'task-actions' onClick={() => handleClick(id, col)}><i class="material-icons">delete</i></div>
+        <div className = 'task-actions' onClick={() => setOpenModal(true)}><i className="material-icons">edit</i></div>
+        <div className = 'task-actions' onClick={() => handleClick(id, col)}><i className="material-icons">delete</i></div>
       
     </div>
      <TaskModal isOpen = {openModal} setIsOpen = {setOpenModal} type = {"edit"} taskIndex = {taskIndex} colIndex = {col}/>

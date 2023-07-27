@@ -9,11 +9,7 @@ const Menu = ({isMenuOpen, setMenu}) => {
     const {boards} = useContext(BoardContext);
     const [openModal, setOpenModal] = useState(false);
     
-    /*
-    if(!isMenuOpen) {
-        return null;
-    }
-    */
+    
 
     const handleClick = () => {
       setOpenModal(true);
@@ -27,7 +23,7 @@ const Menu = ({isMenuOpen, setMenu}) => {
       {
         isMenuOpen && (<div className='menu'>
         <div className='menu-close-button' onClick={() => setMenu(false)}>
-          <i class="material-icons ">close</i>
+          <i className="material-icons ">close</i>
         </div>
         <h2>Buckets</h2>
         <div className = "new-bucket" onClick={handleClick}>
@@ -42,7 +38,7 @@ const Menu = ({isMenuOpen, setMenu}) => {
       </div>)
       }
       
-      <ButtonModal isOpen = {openModal} setIsOpen = {setOpenModal}/>
+      <ButtonModal isOpen = {openModal} setIsOpen = {setOpenModal} type={"add"}/>
     </>
     
   )
